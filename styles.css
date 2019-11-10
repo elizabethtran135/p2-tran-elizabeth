@@ -36,7 +36,7 @@ h3 {
 	font-family: 'Roboto Slab', serif;
 	margin-bottom: 2%;
 }
-p {
+h2, h4, p {
 	font-family: 'Open Sans', sans-serif;
 }
 h5 {
@@ -177,7 +177,30 @@ footer img {
 }
 
 /*---END ABOUT----*/
-
+/*----Gallery----*/
+.gallerypage {
+		background-image: url("images/gallery.jpg");
+}
+.gallerytext {
+	text-align: center;
+}
+.explain {
+	width: 80%;
+	margin: 4% auto;
+	font-style: italic;
+	}
+.gallerymain {
+	display: flex;
+	flex-wrap: wrap;
+}
+.g {
+	width: 80%;
+	margin: 10% auto;
+}
+.g img {
+	width: 90%;
+}
+/*---END gallery----*/
 @media (min-width: 620px) {
 	.hamburger, .menu {
 		display: none;
@@ -215,7 +238,12 @@ footer img {
 	.sm img {
 		width: 28px;
 	}
-
+/*---START GALLERY---*/
+.g {
+	width: 40%;
+	margin: 3% auto;
+}
+/*---END GALLERY---*/
 }
 @media (min-width: 850px) {
 	header {
@@ -247,4 +275,10 @@ footer img {
 	.a:nth-of-type(5) { order: 5; }
 	.a:nth-of-type(6) { order: 6; }
 	/*--END ABOUT--*/
+	/*---START GALLERY---*/
+	.g {
+		width: 23%;
+		margin: 3% auto;
+	}
+	/*---END GALLERY---*/
 }
