@@ -8,3 +8,78 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+.hero {
+	width: 100%;
+}
+
+h3 {
+	font-family: 'Roboto Slab', serif;
+	margin-bottom: 2%;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+h5 {
+	font-family: sans-serif;
+	margin-bottom: 2%;
+}
+
+/*----footer----*/
+footer {
+	background-color: #035a09;
+	color: white;
+	padding: 3%;
+}
+footer img {
+	width: 10%;
+	margin-bottom: 5%;
+}
+/*----recycleicons---*/
+
+.hide {
+	display: none;
+}
+.gallery1 {
+	display: flex;
+	flex-wrap: wrap;
+}
+.r {
+	width: 40%;
+	text-align: center;
+	margin: 3% auto;
+}
+.r img {
+	width: 80%;
+	margin: 4% auto;
+}
+.r h4 {
+	font-size: 1.5rem;
+	margin-bottom: 2%;
+	font-family: 'Pragati Narrow', sans-serif;
+}
+.about {
+	text-align: center;
+	margin: 3%;
+	padding-bottom: 4%
+}
+/*----ways---*/
+
+.hide {
+	display: none;
+}
+.gallery2 {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #080b61;
+	padding-bottom: 4%;
+}
+.w {
+	width: 80%;
+	text-align: center;
+	margin: 3% auto;
+	color: white;
+}
+.w img {
+	width: 80%;
+	margin: 4% auto;
+}
