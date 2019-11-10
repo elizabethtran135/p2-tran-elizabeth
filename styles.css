@@ -7,11 +7,31 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
-
-.hero {
-	width: 100%;
+/*-----HEADER---*/
+header {
+	background-image: url("images/home.jpg");
+	min-height: 52vh;
+  background-size: cover;
 }
-
+header img {
+	width: 165px;
+  margin: 12px 0 5px 10px;
+}
+hr {
+    border-top: 1px solid #ada5a5;
+    margin: 0 auto;
+    width: 91%;
+}
+.quote {
+	font-family: 'Open Sans Light', sans-serif;
+	text-align: center;
+	color: #dddbdb;
+  margin-top: 36px;
+}
+.italicize {
+	font-style: italic;
+}
+/*-----END HEADER---*/
 h3 {
 	font-family: 'Roboto Slab', serif;
 	margin-bottom: 2%;
@@ -22,13 +42,57 @@ p {
 h5 {
 	font-family: sans-serif;
 	margin-bottom: 2%;
+	font-weight: lighter;
 }
-
+/*------HAMBURGER MENU-*/
+.hamburger{
+  background:none;
+  position:absolute;
+  top: 0%;
+  right: 5%;
+  line-height: 253%;
+  color: #999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background: rgba(26, 33, 24, 0.85); position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color: white; font-family: 'Open Sans', sans-serif;;
+}
+.menu a:hover{text-decoration:none; color:#10046b; font-family: 'Open Sans', sans-serif;
+}
+ul.top-menu li {
+   display: none;
+ }
+/*------END-HAMBURGER----*/
 /*----footer----*/
 footer {
 	background-color: #035a09;
 	color: white;
-	padding: 3%;
+	padding: 5%;
 }
 footer img {
 	width: 10%;
@@ -59,18 +123,21 @@ footer img {
 }
 .about {
 	text-align: center;
-	margin: 3%;
-	padding-bottom: 4%
+	margin: 3% auto;
+	padding-bottom: 4%;
+	max-width: 380px;
 }
 /*----ways---*/
 
 .hide {
 	display: none;
 }
+.blue {
+	background-color: #080b61;
+}
 .gallery2 {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #080b61;
 	padding-bottom: 4%;
 }
 .w {
@@ -82,4 +149,49 @@ footer img {
 .w img {
 	width: 80%;
 	margin: 4% auto;
+}
+
+@media (min-width: 620px) {
+	.hamburger, .menu {
+		display: none;
+	}
+	.top-menu {
+		margin: -35px 4px 17px 0;
+    text-align: right;
+	}
+	ul.top-menu li {
+    display: inline;
+		font-family: 'Open Sans Light', sans-serif;
+	}
+	ul li a {
+		margin: 2%;
+		text-decoration: none;
+		color: #e3dddd;
+	}
+	.quote {
+		margin-top: 50px;
+	}
+	.gallery1, .gallery2 {
+		max-width: 850px;
+		margin: auto;
+	}
+	.r {
+		width: 20%;
+	}
+	.w {
+		width: 30%;
+	}
+	.sm {
+		text-align: right;
+ 		margin: -54px 0px 5px 0;
+	}
+	.sm img {
+		width: 28px;
+	}
+}
+@media (min-width: 850px) {
+	header {
+		background-image: url("images/homebig.jpg");
+		min-height: 58vh;
+	}
 }
