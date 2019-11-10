@@ -122,11 +122,22 @@ footer img {
 	margin-bottom: 2%;
 	font-family: 'Pragati Narrow', sans-serif;
 }
-.abouttgg {
+.middle {
 	text-align: center;
 	margin: 3% auto;
 	padding-bottom: 4%;
 	max-width: 380px;
+}
+.abouttgg {
+	padding-bottom: 4%;
+}
+#more {display: none;}
+#button1 {
+	padding: 1%;
+	border-radius: 5px;
+	font-family: 'open sans', sans-serif;
+	color: white;
+	background-color: darkgreen;
 }
 /*----ways---*/
 
@@ -174,6 +185,19 @@ footer img {
 }
 .aboutstory img {
 	width: 80%;
+}
+#external_link {
+	color: white;
+	font-family: 'open sans', sans-serif;
+	font-weight: bold;
+	background-color: darkblue;
+	border-radius: 7px;
+	padding: 2%;
+	text-decoration: none;
+	margin: 5%;
+}
+.push {
+	margin-bottom: 5%;
 }
 
 /*---END ABOUT----*/
